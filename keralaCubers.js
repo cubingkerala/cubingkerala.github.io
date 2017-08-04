@@ -1,4 +1,4 @@
-var url = 'http://localhost:8081/'
+var url = 'http://52.34.39.20:8081/'
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", url + 'getMembers', true);
 xhttp.onload = function() {

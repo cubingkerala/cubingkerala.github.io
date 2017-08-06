@@ -1,4 +1,7 @@
+import MySQLdb
 
+file = open("keralaCubers.html","w")
+header = """
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,9 +35,31 @@
 				</tr>
 			</thead>
 			<tbody>
-<tr><td>Daniel James</td><td>2012JAME04</td><td>24</td></tr><tr><td>Fahad Haneef</td><td>2015HANE04</td><td>4</td></tr><tr><td>Lukhman Abdul Latheef</td><td>2016LATH02</td><td>5</td></tr><tr><td>Midhun Raj</td><td>2017RAJM01</td><td>3</td></tr><tr><td>Safvan Kadannam Potta</td><td>2015POTT02</td><td>5</td></tr><tr><td>Vishnu Jayan</td><td>2013JAYA03</td><td>8</td></tr>
+"""
+footer = """
 			</tbody>
 		</table>
 	</body>
 
 </html>
+"""
+content = ""
+print('Connecting to MySQL...')
+db = MySQLdb.connect(host="localhost", user="dany", passwd="emmaus", db="wca")
+print('Connected to MySQL.')
+cur = db.cursor()
+cur.execute("""
+select p.name as name, k.id as id, count(distinct r.competitionId) as compCount
+from KeralaCubers k, Results r, Persons p
+where k.id = r.personId and p.id = k.id
+group by p.name, k.id;
+""")
+for row in cur.fetchall():
+	content += '<tr>'
+	content += '<td>' + row[0] + '</td>'
+	content += '<td>' + row[1] + '</td>'
+	content += '<td>' + str(row[2]) + '</td>'
+	content += '</tr>'
+file.write(header)
+file.write(content)
+file.write(footer)

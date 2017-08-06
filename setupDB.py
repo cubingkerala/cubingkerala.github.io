@@ -1,0 +1,40 @@
+import urllib
+import zipfile
+import MySQLdb
+import os
+
+print('Downloading DB Zip...')
+urllib.urlretrieve("https://www.worldcubeassociation.org/results/misc/WCA_export.sql.zip", "WCA_export.sql.zip")
+print('Downloaded DB Zip.')
+zip_ref = zipfile.ZipFile("WCA_export.sql.zip", 'r')
+print('Unzipping DB Zip...')
+zip_ref.extractall("./")
+print('Unzipped DB Zip.')
+zip_ref.close()
+print('Connecting to MySQL...')
+db = MySQLdb.connect(host="localhost", user="dany", passwd="emmaus", db="wca")
+print('Connected to MySQL.')
+cur1 = db.cursor()
+cur2 = db.cursor()
+cur1.execute("show tables")
+print('Deleting old tables...')
+for row in cur1.fetchall():
+	cur2.execute("drop table " + row[0])
+print('Deleted old tables.')
+print('Adding new tables...')
+os.system("mysql -u dany -pemmaus wca < WCA_export.sql")
+print('Added new tables.')
+print('Adding Kerala Cubers table...')
+cur1.execute("create table KeralaCubers (id varchar(10));")
+for line in open("membersID.dat","r").readlines():
+	cur1.execute("insert into KeralaCubers values ('" + line[:10] + "')")
+print('Added Kerala Cubers table.')
+print('Deleting setup files...')
+os.remove('WCA_export.sql')
+os.remove('WCA_export.sql.zip')
+os.remove('README.txt')
+print('Deleted setup files.')
+print('Closing MySQL...')
+db.commit()
+db.close()
+print('Closed MySQL...')

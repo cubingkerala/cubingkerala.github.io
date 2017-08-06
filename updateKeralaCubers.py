@@ -8,7 +8,7 @@ db = MySQLdb.connect(host="localhost", user="dany", passwd="emmaus", db="wca")
 print('Connected to MySQL.')
 cur1 = db.cursor()
 print('Adding Kerala Cubers table...')
-cur1.execute("create table KeralaCubers (id varchar(10));")
+cur1.execute("delete from KeralaCubers;")
 for line in open("membersID.dat","r").readlines():
 	cur1.execute("insert into KeralaCubers values ('" + line[:10] + "')")
 print('Added Kerala Cubers table.')

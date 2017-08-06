@@ -6,8 +6,17 @@ order by r.countryRank
 """
 import MySQLdb
 
-def getStr(x):
-	millisecs = x % 100;
+def getStr(x,event,type):
+	if (event == '333fm' and type == 'single'):
+		return str(x)
+	if (event == '333mbf'):
+		missed = x % 100
+		x = x / 100
+		secs = x % 100000
+		solved = 99 - x / 100000 + missed
+		string = str(solved) + '/' + str(solved + missed) + ' ' + str(secs / 60) + ':' + str('%02d' % (secs % 60))
+		return string
+	millisecs = x % 100
 	x = x / 100;
 	secs = x % 60;
 	mins = x / 60;
@@ -116,7 +125,7 @@ for event in events:
 		content += '<tr>'
 		content += '<td>' + str(i) + '</td>'
 		content += '<td>' + row[0] + '</td>'
-		content += '<td>' + getStr(row[1]) + '</td>'
+		content += '<td>' + getStr(row[1],event,'single') + '</td>'
 		content += '<td>' + str(row[2]) + '</td>'
 		content += '<td>' + str(row[3]) + '</td>'
 		content += '<td>' + str(row[4]) + '</td>'
@@ -148,7 +157,7 @@ for event in events:
 		content += '<tr>'
 		content += '<td>' + str(i) + '</td>'
 		content += '<td>' + row[0] + '</td>'
-		content += '<td>' + getStr(row[1]) + '</td>'
+		content += '<td>' + getStr(row[1],event,'average') + '</td>'
 		content += '<td>' + str(row[2]) + '</td>'
 		content += '<td>' + str(row[3]) + '</td>'
 		content += '<td>' + str(row[4]) + '</td>'

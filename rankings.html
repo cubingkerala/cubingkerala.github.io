@@ -1,496 +1,619 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<html lang="en">
+	<title>CUBING KERALA</title>
+<link rel="shortcut icon" href="cubing kerala.jpg" type="image/jpg" />
+<head>
 
-	<head>
+<style>
+body {margin:0;}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: arial;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
 
-		<title>Cubing Kerala</title>
-		<meta charset="utf-8">
+<div class="topnav">
+  <a  href="index.html">Home</a>
+  <a href="kerala competitors.html">Kerala Cubers</a>
+  <a class="active"  href="rankings.html">Rankings</a>
+  <a href="competition.html">Competitions</a>
+<a  href="demo3.html">About Us</a>
+</div>
+
+</div>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fahad.css">
+<body>
+
+<header class="w3-container w3-black">
+  <h1><center><b>Kerala Cubers Ranking</b></center></h1>
+</header>
+	<p><meta charset="utf-8"></p>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="fahad.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	</head>
 
 	<body>
+<style>
+.form-control, .my-form-inline {
+  
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width:200px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+ 
 
-		<!--Navbar-->
-		<div id="nav"></div>
-		<script src="./insertNav.js"></script>
 
-		<div style="margin-left: 25px">
-			<h4>Kerala Cubers Rankings</h4>
-			<p>Note: The official details of Cubers and their results are extracted from official <a href="www.worldcubeassociation.org">WCA site</a>.</p>
-			<p>If you are from Kerala and you have participated in WCA Competitions, please contact Cubing Kerala Admins at keralaspeedcubing@gmail.com along with the proof.</p>
-			<form class="form-inline" onsubmit="return false;">
+
+.form-control, .my-form-inline a:hover {background-color: black}
+
+.form-group {
+  width: 210px;
+}
+
+
+.form-control:hover, .my-form-inline{
+    background-color: orange;
+	cursor: pointer;
+}
+</style>
+
+
+ 
+
+					<form class="form-inline" onsubmit="return false;">
 				<div class="form-group">
 					<select class="form-control" id="event">
-						<option value='333' selected='selected'>Rubik&#039;s Cube</option>
-						<option value='222'>2x2x2 Cube</option>
-						<option value='444'>4x4x4 Cube</option>
-						<option value='555'>5x5x5 Cube</option>
-						<option value='666'>6x6x6 Cube</option>
-						<option value='777'>7x7x7 Cube</option>
-						<option value='333bf'>3x3x3 Blindfolded</option>
-						<option value='333fm'>3x3x3 Fewest Moves</option>
-						<option value='333oh'>3x3x3 One-Handed</option>
-						<option value='333ft'>3x3x3 With Feet</option>
-						<option value='minx'>Megaminx</option>
-						<option value='pyram'>Pyraminx</option>
-						<option value='clock'>Rubik&#039;s Clock</option>
-						<option value='skewb'>Skewb</option>
-						<option value='sq1'>Square-1</option>
-						<option value='444bf'>4x4x4 Blindfolded</option>
-						<option value='555bf'>5x5x5 Blindfolded</option>
-						<option value='333mbf'>3x3x3 Multi-Blind</option>
+
+
+						<option value='333' selected='selected'><b>Rubik&#039;s Cube</b></option>
+						<option value='222' ><b>2x2x2 Cube</b></option>
+						<option value='444'><b>4x4x4 Cube</b></option>
+						<option value='555'><b>5x5x5 Cube</b></option>
+						<option value='666'><b>6x6x6 Cube</b></option>
+						<option value='777'><b>7x7x7 Cube</b></option>
+						<option value='333bf'><b>3x3x3 Blindfolded</b></option>
+						<option value='333fm'><b>3x3x3 Fewest Moves</b></option>
+						<option value='333oh'><b>3x3x3 One-Handed</b></option>
+						<option value='333ft'><b>3x3x3 With Feet</b></option>
+						<option value='minx'><b>Megaminx</b></option>
+						<option value='pyram'><b>Pyraminx</b></option>
+						<option value='clock'><b>Rubik&#039;s Clock</b></option>
+						<option value='skewb'><b>Skewb</b></option>
+						<option value='sq1'><b>Square-1</b></option>
+						<option value='444bf'><b>4x4x4 Blindfolded</b></option>
+						<option value='555bf'><b>5x5x5 Blindfolded</b></option>
+						<option value='333mbf'><b>3x3x3 Multi-Blind</b></option>
 					</select>
 				</div>
 				<div class="form-group">
 					<select class="form-control" id="type">
-						<option value="single">Single</option>
-						<option value="average">Average</option>
-					</select>
+						<option value="single"><b>Single</b></option>
+						<option value="average"><b>Average</b></option>
+					
+</select>
 				</div>
-				<button id="button" class="btn btn-default">Go</button>
+				<button id="button" class="btn btn-primary btn-md ">submit</button>
 			</form>
 		</div>
-<table  id="333single" class="table" style="margin-left: 25px; display: none;">
+<table  id="333single" class="w3-table-all w3-margin-top" style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:25%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>07.93</td><td>19</td><td>200</td><td>615</td></tr><tr><td>2</td><td>Allen John</td><td>09.75</td><td>86</td><td>813</td><td>2374</td></tr><tr><td>3</td><td>Anoop Das</td><td>10.23</td><td>113</td><td>1111</td><td>3050</td></tr><tr><td>4</td><td>Vishnu Jayan</td><td>10.78</td><td>163</td><td>1508</td><td>3985</td></tr><tr><td>5</td><td>Safvan Kadannam Potta</td><td>10.80</td><td>166</td><td>1527</td><td>4027</td></tr><tr><td>6</td><td>Daniel James</td><td>11.97</td><td>287</td><td>2601</td><td>6549</td></tr><tr><td>7</td><td>Aravind Vinod Pulakkat</td><td>13.59</td><td>461</td><td>4259</td><td>10473</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>13.74</td><td>486</td><td>4422</td><td>10834</td></tr><tr><td>9</td><td>Sahaf Hussain</td><td>15.74</td><td>762</td><td>6663</td><td>16016</td></tr><tr><td>10</td><td>Lukhman Abdul Latheef</td><td>16.93</td><td>917</td><td>7950</td><td>19081</td></tr><tr><td>11</td><td>Fahad Haneef</td><td>19.34</td><td>1268</td><td>10388</td><td>24952</td></tr><tr><td>12</td><td>Sahal Zubair</td><td>20.70</td><td>1456</td><td>11581</td><td>28067</td></tr><tr><td>13</td><td>Muhammed Ameen</td><td>22.21</td><td>1676</td><td>12856</td><td>31348</td></tr><tr><td>14</td><td>Midhun Raj</td><td>26.40</td><td>2219</td><td>15680</td><td>39067</td></tr><tr><td>15</td><td>Hashik Kavil</td><td>32.32</td><td>2913</td><td>18710</td><td>47536</td></tr></tbody></table><table  id="333average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>07.93</td><td>19</td><td>200</td><td>615</td></tr><tr><td>2</td><td>Allen John</td><td>09.75</td><td>86</td><td>813</td><td>2374</td></tr><tr><td>3</td><td>Anoop Das</td><td>10.23</td><td>113</td><td>1111</td><td>3050</td></tr><tr><td>4</td><td>Vishnu Jayan</td><td>10.78</td><td>163</td><td>1508</td><td>3985</td></tr><tr><td>5</td><td>Safvan Kadannam Potta</td><td>10.80</td><td>166</td><td>1527</td><td>4027</td></tr><tr><td>6</td><td>Daniel James</td><td>11.97</td><td>287</td><td>2601</td><td>6549</td></tr><tr><td>7</td><td>Aravind Vinod Pulakkat</td><td>13.59</td><td>461</td><td>4259</td><td>10473</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>13.74</td><td>486</td><td>4422</td><td>10834</td></tr><tr><td>9</td><td>Sahaf Hussain</td><td>15.74</td><td>762</td><td>6663</td><td>16016</td></tr><tr><td>10</td><td>Lukhman Abdul Latheef</td><td>16.93</td><td>917</td><td>7950</td><td>19081</td></tr><tr><td>11</td><td>Fahad Haneef</td><td>19.34</td><td>1268</td><td>10388</td><td>24952</td></tr><tr><td>12</td><td>Sahal Zubair</td><td>20.70</td><td>1456</td><td>11581</td><td>28067</td></tr><tr><td>13</td><td>Muhammed Ameen</td><td>22.21</td><td>1676</td><td>12856</td><td>31348</td></tr><tr><td>14</td><td>Midhun Raj</td><td>26.40</td><td>2219</td><td>15680</td><td>39067</td></tr><tr><td>15</td><td>Hashik Kavil</td><td>32.32</td><td>2913</td><td>18710</td><td>47536</td></tr></tbody></table><table  id="333average" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>11.53</td><td>66</td><td>667</td><td>1916</td></tr><tr><td>2</td><td>Allen John</td><td>12.14</td><td>94</td><td>959</td><td>2642</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>12.73</td><td>131</td><td>1337</td><td>3493</td></tr><tr><td>4</td><td>Anoop Das</td><td>14.58</td><td>278</td><td>2756</td><td>6796</td></tr><tr><td>5</td><td>Safvan Kadannam Potta</td><td>14.98</td><td>307</td><td>3097</td><td>7599</td></tr><tr><td>6</td><td>Sahaf Hussain</td><td>15.90</td><td>409</td><td>3965</td><td>9520</td></tr><tr><td>7</td><td>Daniel James</td><td>15.91</td><td>413</td><td>3973</td><td>9538</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>16.61</td><td>473</td><td>4618</td><td>11044</td></tr><tr><td>9</td><td>Aravind Vinod Pulakkat</td><td>17.70</td><td>601</td><td>5672</td><td>13462</td></tr><tr><td>10</td><td>Lukhman Abdul Latheef</td><td>21.20</td><td>1014</td><td>8829</td><td>20978</td></tr><tr><td>11</td><td>Sahal Zubair</td><td>23.06</td><td>1239</td><td>10319</td><td>24658</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>23.44</td><td>1282</td><td>10601</td><td>25395</td></tr><tr><td>13</td><td>Muhammed Ameen</td><td>31.02</td><td>2097</td><td>15101</td><td>37611</td></tr><tr><td>14</td><td>Midhun Raj</td><td>32.76</td><td>2285</td><td>15899</td><td>39871</td></tr><tr><td>15</td><td>Hashik Kavil</td><td>38.44</td><td>2807</td><td>18040</td><td>46196</td></tr></tbody></table><table  id="222single" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>11.53</td><td>66</td><td>667</td><td>1916</td></tr><tr><td>2</td><td>Allen John</td><td>12.14</td><td>94</td><td>959</td><td>2642</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>12.73</td><td>131</td><td>1337</td><td>3493</td></tr><tr><td>4</td><td>Anoop Das</td><td>14.58</td><td>278</td><td>2756</td><td>6796</td></tr><tr><td>5</td><td>Safvan Kadannam Potta</td><td>14.98</td><td>307</td><td>3097</td><td>7599</td></tr><tr><td>6</td><td>Sahaf Hussain</td><td>15.90</td><td>409</td><td>3965</td><td>9520</td></tr><tr><td>7</td><td>Daniel James</td><td>15.91</td><td>413</td><td>3973</td><td>9538</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>16.61</td><td>473</td><td>4618</td><td>11044</td></tr><tr><td>9</td><td>Aravind Vinod Pulakkat</td><td>17.70</td><td>601</td><td>5672</td><td>13462</td></tr><tr><td>10</td><td>Lukhman Abdul Latheef</td><td>21.20</td><td>1014</td><td>8829</td><td>20978</td></tr><tr><td>11</td><td>Sahal Zubair</td><td>23.06</td><td>1239</td><td>10319</td><td>24658</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>23.44</td><td>1282</td><td>10601</td><td>25395</td></tr><tr><td>13</td><td>Muhammed Ameen</td><td>31.02</td><td>2097</td><td>15101</td><td>37611</td></tr><tr><td>14</td><td>Midhun Raj</td><td>32.76</td><td>2285</td><td>15899</td><td>39871</td></tr><tr><td>15</td><td>Hashik Kavil</td><td>38.44</td><td>2807</td><td>18040</td><td>46196</td></tr></tbody></table><table  id="222single" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>02.45</td><td>131</td><td>655</td><td>2426</td></tr><tr><td>2</td><td>Vishnu Jayan</td><td>02.60</td><td>162</td><td>836</td><td>3017</td></tr><tr><td>3</td><td>Adwaith Nambiar</td><td>02.69</td><td>182</td><td>927</td><td>3349</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>03.18</td><td>306</td><td>1634</td><td>5528</td></tr><tr><td>5</td><td>Sahaf Hussain</td><td>04.60</td><td>703</td><td>4254</td><td>13109</td></tr><tr><td>6</td><td>Aravind Vinod Pulakkat</td><td>05.27</td><td>935</td><td>5655</td><td>16909</td></tr><tr><td>7</td><td>Adam Oommen Jacob</td><td>05.51</td><td>1026</td><td>6132</td><td>18233</td></tr><tr><td>8</td><td>Midhun Raj</td><td>06.00</td><td>1178</td><td>7079</td><td>20783</td></tr><tr><td>9</td><td>Lukhman Abdul Latheef</td><td>06.36</td><td>1281</td><td>7720</td><td>22601</td></tr><tr><td>10</td><td>Sahal Zubair</td><td>07.46</td><td>1609</td><td>9427</td><td>27537</td></tr><tr><td>11</td><td>Hashik Kavil</td><td>09.30</td><td>2038</td><td>11266</td><td>33079</td></tr></tbody></table><table  id="222average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>02.45</td><td>131</td><td>655</td><td>2426</td></tr><tr><td>2</td><td>Vishnu Jayan</td><td>02.60</td><td>162</td><td>836</td><td>3017</td></tr><tr><td>3</td><td>Adwaith Nambiar</td><td>02.69</td><td>182</td><td>927</td><td>3349</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>03.18</td><td>306</td><td>1634</td><td>5528</td></tr><tr><td>5</td><td>Sahaf Hussain</td><td>04.60</td><td>703</td><td>4254</td><td>13109</td></tr><tr><td>6</td><td>Aravind Vinod Pulakkat</td><td>05.27</td><td>935</td><td>5655</td><td>16909</td></tr><tr><td>7</td><td>Adam Oommen Jacob</td><td>05.51</td><td>1026</td><td>6132</td><td>18233</td></tr><tr><td>8</td><td>Midhun Raj</td><td>06.00</td><td>1178</td><td>7079</td><td>20783</td></tr><tr><td>9</td><td>Lukhman Abdul Latheef</td><td>06.36</td><td>1281</td><td>7720</td><td>22601</td></tr><tr><td>10</td><td>Sahal Zubair</td><td>07.46</td><td>1609</td><td>9427</td><td>27537</td></tr><tr><td>11</td><td>Hashik Kavil</td><td>09.30</td><td>2038</td><td>11266</td><td>33079</td></tr></tbody></table><table  id="222average" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>02.88</td><td>14</td><td>78</td><td>370</td></tr><tr><td>2</td><td>Daniel James</td><td>03.98</td><td>104</td><td>545</td><td>2004</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>04.41</td><td>169</td><td>896</td><td>3120</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>04.41</td><td>169</td><td>896</td><td>3120</td></tr><tr><td>5</td><td>Sahaf Hussain</td><td>05.51</td><td>402</td><td>2375</td><td>7430</td></tr><tr><td>6</td><td>Adam Oommen Jacob</td><td>07.07</td><td>792</td><td>5091</td><td>15072</td></tr><tr><td>7</td><td>Sahal Zubair</td><td>08.10</td><td>1079</td><td>6780</td><td>19617</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>09.10</td><td>1316</td><td>8139</td><td>23342</td></tr><tr><td>9</td><td>Aravind Vinod Pulakkat</td><td>09.14</td><td>1327</td><td>8189</td><td>23477</td></tr><tr><td>10</td><td>Midhun Raj</td><td>09.72</td><td>1470</td><td>8812</td><td>25313</td></tr><tr><td>11</td><td>Hashik Kavil</td><td>10.57</td><td>1618</td><td>9545</td><td>27536</td></tr></tbody></table><table  id="444single" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>02.88</td><td>14</td><td>78</td><td>370</td></tr><tr><td>2</td><td>Daniel James</td><td>03.98</td><td>104</td><td>545</td><td>2004</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>04.41</td><td>169</td><td>896</td><td>3120</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>04.41</td><td>169</td><td>896</td><td>3120</td></tr><tr><td>5</td><td>Sahaf Hussain</td><td>05.51</td><td>402</td><td>2375</td><td>7430</td></tr><tr><td>6</td><td>Adam Oommen Jacob</td><td>07.07</td><td>792</td><td>5091</td><td>15072</td></tr><tr><td>7</td><td>Sahal Zubair</td><td>08.10</td><td>1079</td><td>6780</td><td>19617</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>09.10</td><td>1316</td><td>8139</td><td>23342</td></tr><tr><td>9</td><td>Aravind Vinod Pulakkat</td><td>09.14</td><td>1327</td><td>8189</td><td>23477</td></tr><tr><td>10</td><td>Midhun Raj</td><td>09.72</td><td>1470</td><td>8812</td><td>25313</td></tr><tr><td>11</td><td>Hashik Kavil</td><td>10.57</td><td>1618</td><td>9545</td><td>27536</td></tr></tbody></table><table  id="444single" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>43.02</td><td>51</td><td>709</td><td>1779</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>46.38</td><td>76</td><td>1028</td><td>2562</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:01.32</td><td>237</td><td>2698</td><td>6611</td></tr><tr><td>4</td><td>Aravind Vinod Pulakkat</td><td>1:01.34</td><td>238</td><td>2700</td><td>6613</td></tr><tr><td>5</td><td>Allen John</td><td>1:06.85</td><td>304</td><td>3264</td><td>8071</td></tr><tr><td>6</td><td>Daniel James</td><td>1:09.14</td><td>332</td><td>3491</td><td>8675</td></tr><tr><td>7</td><td>Vishnu Jayan</td><td>1:38.56</td><td>596</td><td>5441</td><td>14629</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>1:46.04</td><td>669</td><td>5751</td><td>15726</td></tr><tr><td>9</td><td>Adam Oommen Jacob</td><td>1:46.67</td><td>676</td><td>5775</td><td>15793</td></tr></tbody></table><table  id="444average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>43.02</td><td>51</td><td>709</td><td>1779</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>46.38</td><td>76</td><td>1028</td><td>2562</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:01.32</td><td>237</td><td>2698</td><td>6611</td></tr><tr><td>4</td><td>Aravind Vinod Pulakkat</td><td>1:01.34</td><td>238</td><td>2700</td><td>6613</td></tr><tr><td>5</td><td>Allen John</td><td>1:06.85</td><td>304</td><td>3264</td><td>8071</td></tr><tr><td>6</td><td>Daniel James</td><td>1:09.14</td><td>332</td><td>3491</td><td>8675</td></tr><tr><td>7</td><td>Vishnu Jayan</td><td>1:38.56</td><td>596</td><td>5441</td><td>14629</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>1:46.04</td><td>669</td><td>5751</td><td>15726</td></tr><tr><td>9</td><td>Adam Oommen Jacob</td><td>1:46.67</td><td>676</td><td>5775</td><td>15793</td></tr></tbody></table><table  id="444average" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>49.75</td><td>51</td><td>764</td><td>1859</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>56.75</td><td>111</td><td>1455</td><td>3424</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:07.20</td><td>200</td><td>2427</td><td>5901</td></tr><tr><td>4</td><td>Allen John</td><td>1:12.09</td><td>246</td><td>2795</td><td>6944</td></tr><tr><td>5</td><td>Aravind Vinod Pulakkat</td><td>1:15.43</td><td>275</td><td>3051</td><td>7678</td></tr><tr><td>6</td><td>Daniel James</td><td>1:33.55</td><td>462</td><td>4126</td><td>10677</td></tr><tr><td>7</td><td>Vishnu Jayan</td><td>1:53.79</td><td>572</td><td>4771</td><td>12675</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>1:54.68</td><td>581</td><td>4792</td><td>12745</td></tr><tr><td>9</td><td>Adam Oommen Jacob</td><td>1:58.20</td><td>596</td><td>4857</td><td>12959</td></tr></tbody></table><table  id="555single" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>49.75</td><td>51</td><td>764</td><td>1859</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>56.75</td><td>111</td><td>1455</td><td>3424</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:07.20</td><td>200</td><td>2427</td><td>5901</td></tr><tr><td>4</td><td>Allen John</td><td>1:12.09</td><td>246</td><td>2795</td><td>6944</td></tr><tr><td>5</td><td>Aravind Vinod Pulakkat</td><td>1:15.43</td><td>275</td><td>3051</td><td>7678</td></tr><tr><td>6</td><td>Daniel James</td><td>1:33.55</td><td>462</td><td>4126</td><td>10677</td></tr><tr><td>7</td><td>Vishnu Jayan</td><td>1:53.79</td><td>572</td><td>4771</td><td>12675</td></tr><tr><td>8</td><td>Lukhman Abdul Latheef</td><td>1:54.68</td><td>581</td><td>4792</td><td>12745</td></tr><tr><td>9</td><td>Adam Oommen Jacob</td><td>1:58.20</td><td>596</td><td>4857</td><td>12959</td></tr></tbody></table><table  id="555single" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>1:31.63</td><td>45</td><td>733</td><td>1753</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>1:39.90</td><td>67</td><td>1003</td><td>2451</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:44.97</td><td>83</td><td>1184</td><td>2904</td></tr><tr><td>4</td><td>Fahad Haneef</td><td>4:44.10</td><td>389</td><td>3446</td><td>10586</td></tr><tr><td>5</td><td>Daniel James</td><td>6:04.54</td><td>437</td><td>3555</td><td>11086</td></tr></tbody></table><table  id="555average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>1:31.63</td><td>45</td><td>733</td><td>1753</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>1:39.90</td><td>67</td><td>1003</td><td>2451</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:44.97</td><td>83</td><td>1184</td><td>2904</td></tr><tr><td>4</td><td>Fahad Haneef</td><td>4:44.10</td><td>389</td><td>3446</td><td>10586</td></tr><tr><td>5</td><td>Daniel James</td><td>6:04.54</td><td>437</td><td>3555</td><td>11086</td></tr></tbody></table><table  id="555average" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>1:34.81</td><td>32</td><td>536</td><td>1248</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>1:46.48</td><td>55</td><td>890</td><td>2146</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:51.06</td><td>74</td><td>1048</td><td>2516</td></tr></tbody></table><table  id="666single" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>1:34.81</td><td>32</td><td>536</td><td>1248</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>1:46.48</td><td>55</td><td>890</td><td>2146</td></tr><tr><td>3</td><td>Anoop Das</td><td>1:51.06</td><td>74</td><td>1048</td><td>2516</td></tr></tbody></table><table  id="666single" class="w3-table-all w3-margin-top"  style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>2:47.61</td><td>20</td><td>250</td><td>650</td></tr><tr><td>2</td><td>Anoop Das</td><td>3:52.85</td><td>51</td><td>638</td><td>1860</td></tr></tbody></table><table  id="666average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>2:47.61</td><td>20</td><td>250</td><td>650</td></tr><tr><td>2</td><td>Anoop Das</td><td>3:52.85</td><td>51</td><td>638</td><td>1860</td></tr></tbody></table><table  id="666average" class="w3-table-all w3-margin-top"  style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>2:55.58</td><td>18</td><td>221</td><td>573</td></tr><tr><td>2</td><td>Anoop Das</td><td>4:11.64</td><td>50</td><td>628</td><td>1830</td></tr></tbody></table><table  id="777single" class="table" style="margin-left: 25px; display: none;">
-			<thead>
+	<tr><td>1</td><td>Safvan Kadannam Potta</td><td>2:55.58</td><td>18</td><td>221</td><td>573</td></tr><tr><td>2</td><td>Anoop Das</td><td>4:11.64</td><td>50</td><td>628</td><td>1830</td></tr></tbody></table><table  id="777single" class="w3-table-all w3-margin-top" style="display: none;">
+
+	<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="777average" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="777average" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="333bfsingle" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="333bfsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>1:26.09</td><td>21</td><td>204</td><td>539</td></tr><tr><td>2</td><td>Fahad Haneef</td><td>1:41.88</td><td>32</td><td>301</td><td>764</td></tr><tr><td>3</td><td>Hashik Kavil</td><td>3:51.54</td><td>112</td><td>947</td><td>2412</td></tr></tbody></table><table  id="333bfaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>1:26.09</td><td>21</td><td>204</td><td>539</td></tr><tr><td>2</td><td>Fahad Haneef</td><td>1:41.88</td><td>32</td><td>301</td><td>764</td></tr><tr><td>3</td><td>Hashik Kavil</td><td>3:51.54</td><td>112</td><td>947</td><td>2412</td></tr></tbody></table><table  id="333bfaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>2:40.37</td><td>26</td><td>198</td><td>577</td></tr></tbody></table><table  id="333fmsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>2:40.37</td><td>26</td><td>198</td><td>577</td></tr></tbody></table><table  id="333fmsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>34</td><td>16</td><td>191</td><td>793</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>54</td><td>158</td><td>919</td><td>3214</td></tr></tbody></table><table  id="333fmaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>34</td><td>16</td><td>191</td><td>793</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>54</td><td>158</td><td>919</td><td>3214</td></tr></tbody></table><table  id="333fmaverage" class="w3-table-all w3-margin-top"  style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>40.33</td><td>18</td><td>160</td><td>597</td></tr></tbody></table><table  id="333ohsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>40.33</td><td>18</td><td>160</td><td>597</td></tr></tbody></table><table  id="333ohsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Vishnu Jayan</td><td>13.89</td><td>25</td><td>223</td><td>625</td></tr><tr><td>2</td><td>Allen John</td><td>16.11</td><td>52</td><td>533</td><td>1364</td></tr><tr><td>3</td><td>Daniel James</td><td>17.55</td><td>90</td><td>783</td><td>1939</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>19.90</td><td>147</td><td>1248</td><td>3048</td></tr><tr><td>5</td><td>Anoop Das</td><td>20.16</td><td>157</td><td>1304</td><td>3183</td></tr><tr><td>6</td><td>Adwaith Nambiar</td><td>22.94</td><td>248</td><td>1993</td><td>4723</td></tr><tr><td>7</td><td>Hashik Kavil</td><td>27.76</td><td>399</td><td>3195</td><td>7500</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>30.16</td><td>483</td><td>3749</td><td>8786</td></tr><tr><td>9</td><td>Lukhman Abdul Latheef</td><td>30.83</td><td>505</td><td>3879</td><td>9112</td></tr><tr><td>10</td><td>Muhammed Ameen</td><td>44.51</td><td>878</td><td>5962</td><td>14549</td></tr><tr><td>11</td><td>Midhun Raj</td><td>46.20</td><td>900</td><td>6114</td><td>15029</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>54.41</td><td>1018</td><td>6620</td><td>16728</td></tr><tr><td>13</td><td>Sahal Zubair</td><td>57.25</td><td>1041</td><td>6709</td><td>17112</td></tr><tr><td>14</td><td>Aravind Vinod Pulakkat</td><td>1:05.83</td><td>1157</td><td>7001</td><td>18190</td></tr></tbody></table><table  id="333ohaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Vishnu Jayan</td><td>13.89</td><td>25</td><td>223</td><td>625</td></tr><tr><td>2</td><td>Allen John</td><td>16.11</td><td>52</td><td>533</td><td>1364</td></tr><tr><td>3</td><td>Daniel James</td><td>17.55</td><td>90</td><td>783</td><td>1939</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>19.90</td><td>147</td><td>1248</td><td>3048</td></tr><tr><td>5</td><td>Anoop Das</td><td>20.16</td><td>157</td><td>1304</td><td>3183</td></tr><tr><td>6</td><td>Adwaith Nambiar</td><td>22.94</td><td>248</td><td>1993</td><td>4723</td></tr><tr><td>7</td><td>Hashik Kavil</td><td>27.76</td><td>399</td><td>3195</td><td>7500</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>30.16</td><td>483</td><td>3749</td><td>8786</td></tr><tr><td>9</td><td>Lukhman Abdul Latheef</td><td>30.83</td><td>505</td><td>3879</td><td>9112</td></tr><tr><td>10</td><td>Muhammed Ameen</td><td>44.51</td><td>878</td><td>5962</td><td>14549</td></tr><tr><td>11</td><td>Midhun Raj</td><td>46.20</td><td>900</td><td>6114</td><td>15029</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>54.41</td><td>1018</td><td>6620</td><td>16728</td></tr><tr><td>13</td><td>Sahal Zubair</td><td>57.25</td><td>1041</td><td>6709</td><td>17112</td></tr><tr><td>14</td><td>Aravind Vinod Pulakkat</td><td>1:05.83</td><td>1157</td><td>7001</td><td>18190</td></tr></tbody></table><table  id="333ohaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Allen John</td><td>18.53</td><td>32</td><td>347</td><td>863</td></tr><tr><td>2</td><td>Vishnu Jayan</td><td>21.41</td><td>80</td><td>756</td><td>1818</td></tr><tr><td>3</td><td>Daniel James</td><td>22.51</td><td>104</td><td>925</td><td>2215</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>24.74</td><td>155</td><td>1324</td><td>3150</td></tr><tr><td>5</td><td>Anoop Das</td><td>24.83</td><td>159</td><td>1345</td><td>3193</td></tr><tr><td>6</td><td>Adwaith Nambiar</td><td>26.23</td><td>196</td><td>1646</td><td>3854</td></tr><tr><td>7</td><td>Lukhman Abdul Latheef</td><td>36.60</td><td>453</td><td>3652</td><td>8477</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>37.51</td><td>474</td><td>3808</td><td>8868</td></tr><tr><td>9</td><td>Muhammed Ameen</td><td>53.82</td><td>838</td><td>5592</td><td>13612</td></tr><tr><td>10</td><td>Hashik Kavil</td><td>56.33</td><td>877</td><td>5728</td><td>14010</td></tr><tr><td>11</td><td>Midhun Raj</td><td>59.12</td><td>909</td><td>5844</td><td>14403</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>1:01.64</td><td>933</td><td>5939</td><td>14686</td></tr><tr><td>13</td><td>Sahal Zubair</td><td>1:07.99</td><td>985</td><td>6110</td><td>15250</td></tr></tbody></table><table  id="333ftsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Allen John</td><td>18.53</td><td>32</td><td>347</td><td>863</td></tr><tr><td>2</td><td>Vishnu Jayan</td><td>21.41</td><td>80</td><td>756</td><td>1818</td></tr><tr><td>3</td><td>Daniel James</td><td>22.51</td><td>104</td><td>925</td><td>2215</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>24.74</td><td>155</td><td>1324</td><td>3150</td></tr><tr><td>5</td><td>Anoop Das</td><td>24.83</td><td>159</td><td>1345</td><td>3193</td></tr><tr><td>6</td><td>Adwaith Nambiar</td><td>26.23</td><td>196</td><td>1646</td><td>3854</td></tr><tr><td>7</td><td>Lukhman Abdul Latheef</td><td>36.60</td><td>453</td><td>3652</td><td>8477</td></tr><tr><td>8</td><td>Adam Oommen Jacob</td><td>37.51</td><td>474</td><td>3808</td><td>8868</td></tr><tr><td>9</td><td>Muhammed Ameen</td><td>53.82</td><td>838</td><td>5592</td><td>13612</td></tr><tr><td>10</td><td>Hashik Kavil</td><td>56.33</td><td>877</td><td>5728</td><td>14010</td></tr><tr><td>11</td><td>Midhun Raj</td><td>59.12</td><td>909</td><td>5844</td><td>14403</td></tr><tr><td>12</td><td>Fahad Haneef</td><td>1:01.64</td><td>933</td><td>5939</td><td>14686</td></tr><tr><td>13</td><td>Sahal Zubair</td><td>1:07.99</td><td>985</td><td>6110</td><td>15250</td></tr></tbody></table><table  id="333ftsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>36.73</td><td>2</td><td>19</td><td>39</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>2:07.50</td><td>53</td><td>320</td><td>747</td></tr></tbody></table><table  id="333ftaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>36.73</td><td>2</td><td>19</td><td>39</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>2:07.50</td><td>53</td><td>320</td><td>747</td></tr></tbody></table><table  id="333ftaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>45.23</td><td>2</td><td>25</td><td>48</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>2:26.32</td><td>47</td><td>280</td><td>667</td></tr></tbody></table><table  id="minxsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>45.23</td><td>2</td><td>25</td><td>48</td></tr><tr><td>2</td><td>Safvan Kadannam Potta</td><td>2:26.32</td><td>47</td><td>280</td><td>667</td></tr></tbody></table><table  id="minxsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>5:38.75</td><td>364</td><td>1859</td><td>6850</td></tr></tbody></table><table  id="minxaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>5:38.75</td><td>364</td><td>1859</td><td>6850</td></tr></tbody></table><table  id="minxaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="pyramsingle" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="pyramsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>03.95</td><td>76</td><td>400</td><td>1297</td></tr><tr><td>2</td><td>Daniel James</td><td>04.87</td><td>142</td><td>786</td><td>2524</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>07.06</td><td>393</td><td>2039</td><td>6472</td></tr><tr><td>4</td><td>Sahaf Hussain</td><td>08.59</td><td>602</td><td>3127</td><td>9974</td></tr><tr><td>5</td><td>Midhun Raj</td><td>08.65</td><td>612</td><td>3162</td><td>10094</td></tr><tr><td>6</td><td>Adam Oommen Jacob</td><td>33.92</td><td>2004</td><td>8378</td><td>26381</td></tr></tbody></table><table  id="pyramaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>03.95</td><td>76</td><td>400</td><td>1297</td></tr><tr><td>2</td><td>Daniel James</td><td>04.87</td><td>142</td><td>786</td><td>2524</td></tr><tr><td>3</td><td>Vishnu Jayan</td><td>07.06</td><td>393</td><td>2039</td><td>6472</td></tr><tr><td>4</td><td>Sahaf Hussain</td><td>08.59</td><td>602</td><td>3127</td><td>9974</td></tr><tr><td>5</td><td>Midhun Raj</td><td>08.65</td><td>612</td><td>3162</td><td>10094</td></tr><tr><td>6</td><td>Adam Oommen Jacob</td><td>33.92</td><td>2004</td><td>8378</td><td>26381</td></tr></tbody></table><table  id="pyramaverage" class="w3-table-all w3-margin-top" style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>06.95</td><td>104</td><td>602</td><td>1884</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>07.57</td><td>143</td><td>815</td><td>2489</td></tr><tr><td>3</td><td>Midhun Raj</td><td>13.63</td><td>721</td><td>3844</td><td>11960</td></tr><tr><td>4</td><td>Vishnu Jayan</td><td>15.42</td><td>937</td><td>4750</td><td>14816</td></tr></tbody></table><table  id="clocksingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>06.95</td><td>104</td><td>602</td><td>1884</td></tr><tr><td>2</td><td>Adwaith Nambiar</td><td>07.57</td><td>143</td><td>815</td><td>2489</td></tr><tr><td>3</td><td>Midhun Raj</td><td>13.63</td><td>721</td><td>3844</td><td>11960</td></tr><tr><td>4</td><td>Vishnu Jayan</td><td>15.42</td><td>937</td><td>4750</td><td>14816</td></tr></tbody></table><table  id="clocksingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>30.77</td><td>93</td><td>921</td><td>2814</td></tr></tbody></table><table  id="clockaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>30.77</td><td>93</td><td>921</td><td>2814</td></tr></tbody></table><table  id="clockaverage" class="w3-table-all w3-margin-top" style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>54.91</td><td>99</td><td>893</td><td>2680</td></tr></tbody></table><table  id="skewbsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>54.91</td><td>99</td><td>893</td><td>2680</td></tr></tbody></table><table  id="skewbsingle" class="w3-table-all w3-margin-top" style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>04.66</td><td>88</td><td>480</td><td>1533</td></tr><tr><td>2</td><td>Adam Oommen Jacob</td><td>05.32</td><td>122</td><td>637</td><td>2092</td></tr><tr><td>3</td><td>Safvan Kadannam Potta</td><td>10.12</td><td>363</td><td>2064</td><td>6807</td></tr><tr><td>4</td><td>Midhun Raj</td><td>11.41</td><td>425</td><td>2383</td><td>7819</td></tr><tr><td>5</td><td>Daniel James</td><td>19.80</td><td>623</td><td>3372</td><td>11374</td></tr></tbody></table><table  id="skewbaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>04.66</td><td>88</td><td>480</td><td>1533</td></tr><tr><td>2</td><td>Adam Oommen Jacob</td><td>05.32</td><td>122</td><td>637</td><td>2092</td></tr><tr><td>3</td><td>Safvan Kadannam Potta</td><td>10.12</td><td>363</td><td>2064</td><td>6807</td></tr><tr><td>4</td><td>Midhun Raj</td><td>11.41</td><td>425</td><td>2383</td><td>7819</td></tr><tr><td>5</td><td>Daniel James</td><td>19.80</td><td>623</td><td>3372</td><td>11374</td></tr></tbody></table><table  id="skewbaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Adwaith Nambiar</td><td>07.59</td><td>96</td><td>566</td><td>1693</td></tr><tr><td>2</td><td>Adam Oommen Jacob</td><td>09.83</td><td>169</td><td>1027</td><td>3218</td></tr><tr><td>3</td><td>Midhun Raj</td><td>18.00</td><td>447</td><td>2599</td><td>8330</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>19.33</td><td>478</td><td>2759</td><td>8879</td></tr><tr><td>5</td><td>Daniel James</td><td>31.02</td><td>635</td><td>3413</td><td>11326</td></tr></tbody></table><table  id="sq1single" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Adwaith Nambiar</td><td>07.59</td><td>96</td><td>566</td><td>1693</td></tr><tr><td>2</td><td>Adam Oommen Jacob</td><td>09.83</td><td>169</td><td>1027</td><td>3218</td></tr><tr><td>3</td><td>Midhun Raj</td><td>18.00</td><td>447</td><td>2599</td><td>8330</td></tr><tr><td>4</td><td>Safvan Kadannam Potta</td><td>19.33</td><td>478</td><td>2759</td><td>8879</td></tr><tr><td>5</td><td>Daniel James</td><td>31.02</td><td>635</td><td>3413</td><td>11326</td></tr></tbody></table><table  id="sq1single" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>17.24</td><td>28</td><td>191</td><td>671</td></tr></tbody></table><table  id="sq1average" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>17.24</td><td>28</td><td>191</td><td>671</td></tr></tbody></table><table  id="sq1average" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>20.04</td><td>13</td><td>125</td><td>443</td></tr></tbody></table><table  id="444bfsingle" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>20.04</td><td>13</td><td>125</td><td>443</td></tr></tbody></table><table  id="444bfsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="444bfaverage" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="444bfaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="555bfsingle" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="555bfsingle" class="w3-table-all w3-margin-top" style="display: none;">
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="555bfaverage" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="555bfaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	</tbody></table><table  id="333mbfsingle" class="table" style="margin-left: 25px; display: none;">
+	</tbody></table><table  id="333mbfsingle" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
-	<tr><td>1</td><td>Daniel James</td><td>8/8 53:44</td><td>10</td><td>54</td><td>208</td></tr></tbody></table><table  id="333mbfaverage" class="table" style="margin-left: 25px; display: none;">
+	<tr><td>1</td><td>Daniel James</td><td>8/8 53:44</td><td>10</td><td>54</td><td>208</td></tr></tbody></table><table  id="333mbfaverage" class="w3-table-all w3-margin-top" style="display: none;">
+
 			<thead>
 				<tr>
-					<th>Rank</th>
-					<th>Name</th>
-					<th>Result</th>
-					<th>National Rank</th>
-					<th>Asian Rank</th>
-					<th>World Rank</th>
+					<th style="width:10%;" >Rank</th>
+					<th style="width:30%;" >Name</th>
+					<th style="width:20%;" >Result</th>
+					<th style="width:15%;" >National Rank</th>
+					<th style="width:15%;" >Asian Rank</th>
+					<th style="width:15%;" >World Rank</th>
 				</tr>
 			</thead>
 			<tbody>
 	</tbody></table>
 		</table>
 
-		<script src="./rankings.js"></script>
-
-	</body>
-
+		<script>
+var eventID = document.getElementById('event').value;
+var type = document.getElementById('type').value;
+document.getElementById(eventID.toString() + type.toString()).style.display = 'block';
+document.getElementById('button').onclick = function() {
+	document.getElementById(eventID.toString() + type.toString()).style.display = 'none';
+	eventID = document.getElementById('event').value;
+	type = document.getElementById('type').value;
+	document.getElementById(eventID.toString() + type.toString()).style.display = 'block';
+}
+</script>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fahad.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://chat.whatsapp.com/14PI3QPmXdz5BBUkjIZUD1"><i class="fa fa-whatsapp"></i></a> 
+      <a href="mailto:keralaspeedcubing@gmail.com"><i class="fa fa-envelope"></i></a>  
+      <a href="https://www.facebook.com/groups/1747543258890380/"><i class="fa fa-cubes"></i></a>  
+      <a href="https://www.facebook.com/Cubingkerala2k17/"><i class="fa fa-facebook"></i></a>   <p class="w3-medium">
+  Powered by <a href="https://WWW.cubingkerala.ml" target="_blank">CUBING KERALA</a>
+  </p>
+</footer>
+</body>
 </html>
+
+

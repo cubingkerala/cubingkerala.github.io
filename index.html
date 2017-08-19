@@ -1,35 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <title>CUBING KERALA</title>
+<link rel="shortcut icon" href="cubing kerala.jpg" type="image/jpg" />
+<head>
 
-	<head>
+<style>
+body {margin:0;}
 
-		<title>Cubing Kerala</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-	</head>
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: arial;
+}
 
-	<body>
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-		<!--Navbar-->
-		<div id="nav"></div>
-		<script src="./insertNav.js"></script>
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
 
-		<!--Header-->
-		<div class="jumbotron">
-			<h1>Cubing Kerala</h1>
-			<ol>
-				<li>Formed on 2017.</li>
-				<li>Over 50 Cubers from Kerala.</li>
-				<li>Promotes WCA competitions in Kerala.</li>
-				<li>Guides Cubers to increase speed.</li>
-			</ol>
-		</div>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="kerala competitors.html">Kerala Cubers</a>
+  <a href="rankings.html">Rankings</a>
+  <a href="competition.html">Competitions</a>
+<a href="demo3.html">About Us</a>
+</div>
 
-		<script src="./main.js"></script>
 
-	</body>
+</div>
 
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('dark_spots_texture_background_50355_602x339.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+</style>
+<body>
+
+<div class="bgimg">
+ 
+  <div class="middle">
+    <h1><b>COMING SOON</b></h1>
+    <hr>
+    <b><p id="demo" style="font-size:40px"></p></b>
+  </div>
+  
+  </div>
+</div>
+
+<script>
+
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 31, 2017 5:45:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "THE GAME BEGINS";
+    }
+}, 1000);
+</script>
+     
+</body>
+</body><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fahad.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://chat.whatsapp.com/14PI3QPmXdz5BBUkjIZUD1"><i class="fa fa-whatsapp"></i></a> 
+      <a href="mailto:keralaspeedcubing@gmail.com"><i class="fa fa-envelope"></i></a>  
+      <a href="https://www.facebook.com/groups/1747543258890380/"><i class="fa fa-cubes"></i></a>  
+      <a href="https://www.facebook.com/Cubingkerala2k17/"><i class="fa fa-facebook"></i></a>   <p class="w3-medium">
+  Powered by <a href="https://WWW.cubingkerala.ml" target="_blank">CUBING KERALA</a>
+      </p>
+</footer>
+
+</body>
 </html>
